@@ -1,7 +1,7 @@
 # Building App
 
 # Step 1: import libraries
-import streamlit as 
+import streamlit as st
 import numpy as np
 
 # Step 2: load weights
