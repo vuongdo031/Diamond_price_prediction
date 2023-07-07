@@ -41,11 +41,11 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z, x_mean, x_std, th
 st.title('💎 DIAMOND PRICE PREDICTION 💎')
 
 st.header("Please enter the diamond's characteristic parameters")
-carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1)
+carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Cut Rating:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
 color = st.selectbox('Color Rating:', ['D', 'E', 'F', 'G', 'H', 'I', 'J'])
 clarity = st.selectbox('Clarity Rating:', ['I1', 'IF', 'SI1', 'SI2', 'VS1', 'VS2', 'VVS1', 'VVS2'])
-depth = st.number_input('The Percentage of Depth:', min_value=0.1, max_value=100.0, value=1)
+depth = st.number_input('The Percentage of Depth:', min_value=0.1, max_value=100.0, value=1.0)
 table = st.number_input('The Table Width:', min_value=0.1, max_value=100.0, value=1.0)
 x = st.number_input('Diamond Length (X) in mm:', min_value=0.1, max_value=100, value=1.0)
 y = st.number_input('Diamond Width (Y) in mm:', min_value=0.1, max_value=100, value=1.0) 
