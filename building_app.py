@@ -52,5 +52,5 @@ y = st.number_input('Diamond Width (Y) in mm:', min_value=0.1, max_value=100, va
 z = st.number_input('Diamond Height (Z) in mm:', min_value=0.1, max_value=100, value=1.0)
 
 if st.button('Predict'):
-    out = predict(carat, cut, color, clarity, depth, table, x, y, z, x_mean, x_std, theta)
+    out = predict(carat, cut, color, clarity, depth, table, x, y, z, X_mean, X_std, theta)
     st.success(f'The Predicted Price of Diamond is:, ${out[0,0]:.2f} USD')
